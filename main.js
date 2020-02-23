@@ -10,5 +10,6 @@ const worker = createWorker({
     await worker.initialize('eng');
     const { data: { text } } = await worker.recognize('https://tesseract.projectnaptha.com/img/eng_bw.png');
     console.log(text);
+    console.log('this is a print by seekmtheseeker');
     await worker.terminate();
 })();
